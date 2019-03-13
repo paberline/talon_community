@@ -75,6 +75,10 @@ def ssh_copy_id_servers(m):
 
 
 keymap = {
+    "shell Whereami": "pwd ",
+    "shell home": "~/",
+    "shell changedir": "cd",
+    "shell copy": "cp",
     "lefty": Key("ctrl-a"),
     "ricky": Key("ctrl-e"),
     "(pain new | split vertical)": Key("cmd-d"),
