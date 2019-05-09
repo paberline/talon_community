@@ -26,6 +26,17 @@ ctx.keymap(
 )
 
 # TODO: defined function
+ctx.keymap({
+
+
+
+"def defun(m):[<dgndictation>] [over]":[
+    name = '_'.join(m.dgndictation[0]),
+    insert(f'def {name}():\n\t')],
+
+}
+)
+
 # TODO: defined class
 # TODO: python-ast
 # TODO: don't overload tab for quinn snippet navigation
