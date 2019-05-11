@@ -4,6 +4,8 @@ from ..utils import is_filetype, snake_text
 
 FILETYPES = (".py",)
 
+
+PREFIX = "pie"
 ctx = Context("python", func=is_filetype(FILETYPES))
 # ctx = Context("python")
 
@@ -22,20 +24,54 @@ ctx.keymap(
         ],
         "star arguments": "*args",
         "star star K wargs": "**kwargs",
-    }
-)
 
+    # add some python keywords
+    PREFIX + "and": "and",
+    PREFIX + "as": "as",
+    PREFIX + "assert": "assert",
+    PREFIX + "break": "break",
+    PREFIX + "class": "class",
+    PREFIX + "continue": "continue",
+    PREFIX + "def": "def",
+    PREFIX +"del":"del",
+    PREFIX + "elif": "elif",
+    PREFIX + "else": "else",
+    PREFIX + "except": "except",
+    PREFIX + "exec": "exec",
+    PREFIX + "finally": "finally",
+    PREFIX + "for": "for",
+    PREFIX + "from": "from",
+    PREFIX + "global": "global",
+    PREFIX + "global": "global",
+    PREFIX + "if": "if",
+    PREFIX + "import": "import",
+    PREFIX + "import": "import",
+    PREFIX + "in": "in",
+    PREFIX + "is": "is",
+    PREFIX + "lambda": "lambda",
+    PREFIX + "not": "not",
+    PREFIX + "or": "or",
+    PREFIX + "pass": "pass",
+    PREFIX + "print": "print",
+    PREFIX + "raise": "raise",
+    PREFIX + "return": "return",
+    PREFIX + "try": "try",
+    PREFIX + "while": "while",
+    PREFIX + "while": "while",
+    PREFIX + "with": "with",
+    PREFIX + "yield": "yield",
+    })
 # TODO: defined function
-ctx.keymap({
+# |ctx.keymap({
 
+|
 
+# |"def defun(m):[<dgndictation>] [over]":[
+# |    name = '_'.join(m.dgndictation[0]),
+# |    insert(f'def {name}():\n\t')],
 
-"def defun(m):[<dgndictation>] [over]":[
-    name = '_'.join(m.dgndictation[0]),
-    insert(f'def {name}():\n\t')],
-
-}
-)
+    # ()}
+# |)
 
 # TODO: defined class
 # TODO: python-ast
