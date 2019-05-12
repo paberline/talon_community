@@ -5,7 +5,7 @@ from ..utils import is_filetype, snake_text
 FILETYPES = (".py",)
 
 
-PREFIX = "pie"
+PREFIX = "py"
 ctx = Context("python", func=is_filetype(FILETYPES))
 # ctx = Context("python")
 
@@ -27,15 +27,15 @@ ctx.keymap(
 
     # add some python keywords
     PREFIX + "and": "and",
-    PREFIX + "as": "as",
+    PREFIX + "az": "as",
     PREFIX + "assert": "assert",
     PREFIX + "break": "break",
     PREFIX + "class": "class",
     PREFIX + "continue": "continue",
     PREFIX + "def": "def",
-    PREFIX +"del":"del",
+    PREFIX + "del": "del",
     PREFIX + "elif": "elif",
-    PREFIX + "else": "else",
+    PREFIX + " else ": "else",
     PREFIX + "except": "except",
     PREFIX + "exec": "exec",
     PREFIX + "finally": "finally",
@@ -46,7 +46,7 @@ ctx.keymap(
     PREFIX + "if": "if",
     PREFIX + "import": "import",
     PREFIX + "import": "import",
-    PREFIX + "in": "in",
+    PREFIX + " in": "in",
     PREFIX + "is": "is",
     PREFIX + "lambda": "lambda",
     PREFIX + "not": "not",
@@ -55,8 +55,7 @@ ctx.keymap(
     PREFIX + "print": "print",
     PREFIX + "raise": "raise",
     PREFIX + "return": "return",
-    PREFIX + "try": "try",
-    PREFIX + "while": "while",
+    PREFIX + " try": "try",
     PREFIX + "while": "while",
     PREFIX + "with": "with",
     PREFIX + "yield": "yield",
@@ -64,7 +63,6 @@ ctx.keymap(
 # TODO: defined function
 # |ctx.keymap({
 
-|
 
 # |"def defun(m):[<dgndictation>] [over]":[
 # |    name = '_'.join(m.dgndictation[0]),
