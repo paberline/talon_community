@@ -59,6 +59,37 @@ ctx.keymap(
     PREFIX + "while": "while",
     PREFIX + "with": "with",
     PREFIX + "yield": "yield",
+
+    # add some standard library packages
+    PREFIX + "datetime": "datetime",
+    PREFIX + "string": "string",
+    # numeric types
+    PREFIX + "int": "int",
+    PREFIX + "float": "float",
+
+    # set types
+PREFIX + "set": "set",
+PREFIX + "frozenset": "frozenset",
+    # sequence types
+PREFIX + "list": "list",
+PREFIX + "tuple": "tuple",
+PREFIX + "range": "range",
+    #mapping types
+PREFIX + "dict": "dict",
+
+    # binary sequence types
+PREFIX + "bytes": "bytes",
+PREFIX + "bytearray": "bytearray",
+    PREFIX + "memoryview": "memoryview",
+    # context manager types
+    PREFIX + "with": "with",
+    # data types
+    PREFIX + "datetime": "datetime",
+    PREFIX + "calendar": "calendar",
+    PREFIX + "collections": "collections",
+    PREFIX + "collectionsabc": "collections.abc",
+
+
     })
 # TODO: defined function
 # |ctx.keymap({
