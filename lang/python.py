@@ -1,5 +1,5 @@
 from talon.voice import Context, Key
-
+import os
 from ..utils import is_filetype, snake_text
 
 FILETYPES = (".py",)
@@ -89,6 +89,8 @@ PREFIX + "bytearray": "bytearray",
     PREFIX + "collections": "collections",
     PREFIX + "collectionsabc": "collections.abc",
 
+    PREFIX + "if main": "if __name__==__main__:"\
+                 +os.linesep+ " main()",
 
     })
 # TODO: defined function
